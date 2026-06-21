@@ -2077,15 +2077,16 @@ section { padding: var(--section-y) 0; }
 .faq summary {
   cursor: pointer;
   list-style: none;
-  padding: 24px 32px;
+  padding: 28px 36px;
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: clamp(1.2rem, 1.6vw, 1.45rem);
   color: var(--green);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
   letter-spacing: 0.005em;
+  line-height: 1.25;
 }
 .faq summary::-webkit-details-marker { display: none; }
 .faq summary::after {
@@ -2099,12 +2100,14 @@ section { padding: var(--section-y) 0; }
 }
 .faq details[open] summary::after { transform: rotate(45deg); }
 .faq__body {
-  padding: 0 32px 28px;
-  font-size: 1rem;
-  line-height: 1.65;
+  padding: 4px 36px 32px;
+  font-size: 1.1rem;
+  line-height: 1.7;
   color: var(--ink-soft);
 }
-.faq__body p + p { margin-top: 0.8em; }
+.faq__body p { margin: 0; }
+.faq__body p + p { margin-top: 1em; }
+.faq__body strong { color: var(--green); font-weight: 700; }
 
 /* ============================================================
    PARTNER GRID
