@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt — Kaffee Guru</title>
+  <meta name="description" content="Kontaktieren Sie Reto Buchli, den Kaffee Guru. Stutzrain 62, 6005 St. Niklausen/LU — hallo@kaffeeguru.ch" />
+  <link rel="icon" href="assets/images/logo.png" type="image/png" />
+  <link rel="stylesheet" href="css/styles.css?v=7" />
+</head>
+<body>
+
+  <header class="site-header is-light">
+    <nav class="nav">
+      <a class="nav__brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Kaffee Guru" />
+        <span>Kaffee Guru</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="angebot.html">Angebot</a></li>
+        <li><a href="erlebnis.html">Erlebnis</a></li>
+        <li><a href="mandate.html">Mandate</a></li>
+        <li><a href="ueber-mich.html">Über mich</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        <li><a href="buchung.html" class="nav__cta">Termin buchen</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- SUBHERO -->
+    <section class="subhero">
+      <div class="subhero__bg-circle subhero__bg-circle--1"></div>
+      <div class="subhero__bg-circle subhero__bg-circle--2"></div>
+      <div class="container subhero__inner">
+        <span class="eyebrow eyebrow--light eyebrow--center reveal">Kontakt</span>
+        <h1 class="reveal">Lassen Sie uns<br><em>sprechen</em>.</h1>
+        <p class="reveal" style="--reveal-delay: 0.1s;">
+          Sie möchten mehr aus Ihrem Kaffee machen? Schreiben Sie mir, rufen Sie an oder schicken Sie ein Mail — ich melde mich innerhalb von 24 Stunden mit einer unverbindlichen Offerte.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT GRID -->
+    <section>
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Form -->
+          <div class="reveal">
+            <span class="eyebrow">Schreiben Sie mir</span>
+            <h2 style="margin-bottom: 32px;">Anfrage senden.</h2>
+            <form class="contact-form" novalidate>
+              <div class="form-row">
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" required placeholder="Ihr Name" />
+                </div>
+                <div>
+                  <label for="firma">Firma <span style="opacity:0.5; letter-spacing:0; text-transform:none;">(optional)</span></label>
+                  <input id="firma" name="firma" type="text" placeholder="Firma" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div>
+                  <label for="email">E-Mail</label>
+                  <input id="email" name="email" type="email" required placeholder="ihre@email.ch" />
+                </div>
+                <div>
+                  <label for="telefon">Telefon <span style="opacity:0.5; letter-spacing:0; text-transform:none;">(optional)</span></label>
+                  <input id="telefon" name="telefon" type="tel" placeholder="+41 …" />
+                </div>
+              </div>
+              <div>
+                <label for="betreff">Betreff</label>
+                <select id="betreff" name="betreff">
+                  <option value="">Bitte auswählen</option>
+                  <option value="Barista buchen">Barista zu Hause buchen</option>
+                  <option value="Büro-Beratung">Büro-Beratung</option>
+                  <option value="Hotellerie-Konzept">Hotellerie & Gastronomie</option>
+                  <option value="Rösterei-Beratung">Rösterei-Beratung</option>
+                  <option value="Mandat">Mandat / Interim</option>
+                  <option value="Workshop">Workshop / Team-Event</option>
+                  <option value="Reise">Kaffeereise</option>
+                  <option value="Vortrag">Vortrag</option>
+                  <option value="Charta">Charta / Unterstützung</option>
+                  <option value="Allgemein">Allgemeine Anfrage</option>
+                </select>
+              </div>
+              <div>
+                <label for="nachricht">Nachricht</label>
+                <textarea id="nachricht" name="nachricht" required placeholder="Erzählen Sie mir kurz von Ihrem Anliegen …"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">Nachricht senden
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </button>
+              <p class="form-status" style="margin: 0; font-size: 0.95rem;"></p>
+            </form>
+          </div>
+
+          <!-- Info -->
+          <div class="reveal" style="--reveal-delay: 0.1s;">
+            <span class="eyebrow">Direkt erreichen</span>
+            <h2 style="margin-bottom: 32px;">Kaffee Guru.</h2>
+
+            <a href="mailto:hallo@kaffeeguru.ch" class="contact-info-card">
+              <div class="contact-info-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="m22 7-10 5L2 7"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-card__label">E-Mail</div>
+                <div class="contact-info-card__value">hallo@kaffeeguru.ch</div>
+              </div>
+            </a>
+
+            <a href="https://kaffeeguru.ch" class="contact-info-card">
+              <div class="contact-info-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M2 12h20M12 2c3 3 5 7 5 10s-2 7-5 10c-3-3-5-7-5-10s2-7 5-10z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-card__label">Web</div>
+                <div class="contact-info-card__value">kaffeeguru.ch</div>
+              </div>
+            </a>
+
+            <div class="contact-info-card" style="cursor: default;">
+              <div class="contact-info-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-card__label">Adresse</div>
+                <div class="contact-info-card__value" style="font-size: 1rem; line-height: 1.4;">
+                  Stutzrain 62<br>6005 St. Niklausen/LU
+                </div>
+              </div>
+            </div>
+
+            <p style="font-size: 0.82rem; opacity: 0.7; margin-top: 24px; letter-spacing: 0.02em;">
+              Ein Unternehmen der <strong style="color: var(--green);">REBU Spezialitäten GmbH</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HONORAR -->
+    <section style="background: var(--beige);">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Honorar</span>
+          <h2>Drei flexible<br>Modelle.</h2>
+          <p>Gerne erstelle ich Ihnen eine unverbindliche Offerte. Wählen Sie das passende Angebot.</p>
+        </div>
+
+        <div class="honorar">
+          <div class="honorar__card reveal">
+            <div class="honorar__icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="16" cy="16" r="12"/>
+                <path d="M16 8v8l5 3"/>
+              </svg>
+            </div>
+            <h3>Beratungs-Honorar</h3>
+            <p>Stundenlohn, Tages-Pauschale oder Projekt-Pauschale — gemeinsam vereinbart, transparent kalkuliert.</p>
+          </div>
+
+          <div class="honorar__card honorar__card--featured reveal" style="--reveal-delay: 0.1s;">
+            <div class="honorar__icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 4l11 4v9c0 7-5 11-11 13-6-2-11-6-11-13V8l11-4z"/>
+                <path d="M11 16l3 3 7-7"/>
+              </svg>
+            </div>
+            <h3>«Sorglos-Paket»</h3>
+            <p>Massgeschneidertes Angebot mit klarem Leistungspaket und Laufzeit. Ganzjährige, nachhaltige Qualität in Ihrem Unternehmen.</p>
+          </div>
+
+          <div class="honorar__card reveal" style="--reveal-delay: 0.2s;">
+            <div class="honorar__icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 4h18v24H7zM11 10h10M11 16h10M11 22h6"/>
+              </svg>
+            </div>
+            <h3>Ausschreibungen</h3>
+            <p>Bei Kaffee- oder Maschinen-Ausschreibungen kann eine Kostenbeteiligung durch Röster oder Maschinen-Anbieter erfolgen — vorgängig abgesprochen und transparent kommuniziert.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHARTA TEASER -->
+    <section class="pull-quote">
+      <div class="container">
+        <div class="pull-quote__inner reveal">
+          <span class="pull-quote__mark">"</span>
+          <p class="pull-quote__text">
+            Gemeinsam stark. Mit dem gemeinsamen Willen für eine <em style="color: var(--red); font-style: italic;">faire Entlöhnung</em> bis zum letzten Glied in der Wertschöpfungs­kette kann viel erreicht werden.
+          </p>
+          <cite class="pull-quote__cite">Kaffee Guru Charta</cite>
+          <div style="margin-top: 32px;">
+            <a href="charta.html" class="btn btn--outline">Charta lesen
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo.png" alt="Kaffee Guru" />
+          <p class="footer__brand-tagline">Vom Ursprung bis in die Tasse — reiner Genuss.</p>
+          <p>Ein Unternehmen der REBU Spezialitäten GmbH. Reto Buchli berät Kaffeebegeisterte in der Schweiz, Deutschland und Österreich.</p>
+        </div>
+        <div>
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="angebot.html">Angebot</a></li>
+            <li><a href="erlebnis.html">Erlebnis</a></li>
+            <li><a href="mandate.html">Mandate</a></li>
+            <li><a href="ueber-mich.html">Über mich</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Kontakt</h5>
+          <ul>
+            <li>Kaffee Guru</li>
+            <li>Stutzrain 62</li>
+            <li>6005 St. Niklausen/LU</li>
+            <li><a href="mailto:hallo@kaffeeguru.ch">hallo@kaffeeguru.ch</a></li>
+            <li><a href="https://kaffeeguru.ch">kaffeeguru.ch</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Folgen Sie mir</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Kaffee Guru — REBU Spezialitäten GmbH</span>
+        <span>Impressum · Datenschutz · AGB</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js?v=7"></script>
+</body>
+</html>
