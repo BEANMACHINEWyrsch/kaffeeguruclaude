@@ -274,9 +274,14 @@ section { padding: var(--section-y) 0; }
 .nav__brand img {
   height: 46px;
   width: auto;
-  transition: transform var(--t) var(--ease-spring);
+  transition: transform var(--t) var(--ease-spring), filter 0.4s var(--ease);
 }
 .nav__brand:hover img { transform: rotate(-5deg) scale(1.05); }
+
+/* Auf grünem Hero (is-light, nicht gescrollt) → Logo wird beige */
+.site-header.is-light:not(.is-scrolled) .nav__brand img {
+  filter: brightness(0) invert(0.94) sepia(0.18) saturate(0.6) hue-rotate(8deg);
+}
 
 .nav__menu {
   display: flex;
